@@ -17,6 +17,8 @@ def get_simclr_pipeline_transform(size, s=1):
     ])
 
     return data_transforms
+
+
 ds = TezroDataset('demo.csv', './datasets', transform=ContrastiveLearningViewGenerator(
                                                                   get_simclr_pipeline_transform(165),
                                                                   2))

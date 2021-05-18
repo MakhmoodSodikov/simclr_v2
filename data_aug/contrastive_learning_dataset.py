@@ -34,8 +34,8 @@ class ContrastiveLearningDataset:
                                                               self.get_simclr_pipeline_transform(96),
                                                               n_views),
                                                           download=True),
-                          'tezro': lambda: TezroDataset(csv_file='demo.csv', transform=ContrastiveLearningViewGenerator(
-                                                                  self.get_simclr_pipeline_transform(32),
+                          'tezro': lambda: TezroDataset(csv_file='DataFrame.csv', transform=ContrastiveLearningViewGenerator(
+                                                                  self.get_simclr_pipeline_transform(96),
                                                                   n_views), root_dir=self.root_folder)}
 
         try:

@@ -87,3 +87,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# python run.py -data /home/data/data/classification_flat -dataset-name tezro --epochs 100
